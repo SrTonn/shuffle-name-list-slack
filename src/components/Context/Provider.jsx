@@ -14,7 +14,7 @@ export default function Provider({ children }) {
   }
 
   const catchNameList = (input) => {
-    const reFindHour = /(<\s)?\d{1,2}\s.*ago/i
+    const reFindHour = /(<\s)?\d{1,2}\s(hours|horas|minutes|minutos)\s(ago|atrás)/i;
     const reFindEmoticons = /:.*:/g
     let lines = input.split('\n')
     const hasHour = lines.some((line) => reFindHour.test(line));
