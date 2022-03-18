@@ -1,4 +1,14 @@
 .Main {
-  display: flex;
   align-items: center;
+  display: flex;
+}
+
+.Main textarea {
+  resize: none;
+  outline: none;
+}
+
+.Main > label:nth-child(3) {
+  transition: opacity 2s linear;
+  opacity: 0;
 }

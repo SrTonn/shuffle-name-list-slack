@@ -7,6 +7,7 @@ export default function Provider({ children }) {
 
   const handleClick = () => {
     setNameList(catchNameList(inputTextArea))
+    document.querySelector('main > label:nth-child(3)').style.opacity = 1;
   }
 
   const handleChange = ({ target: {value} }) => {
